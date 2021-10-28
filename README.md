@@ -1,2 +1,2 @@
 # Python_Project
-This repository contains python projects.
+This repository contains python project of rock paper scissors game.
