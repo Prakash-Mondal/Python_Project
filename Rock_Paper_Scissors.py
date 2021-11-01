@@ -1,8 +1,15 @@
 
+
 import random
 import os
+
+# Creating a function to clear output screen...
+
+
 def clear(): return os.system("cls")
 
+
+# Creating game images...
 
 rock = '''
      _______  
@@ -42,6 +49,7 @@ while not end_of_game:
           + "2. Scissors wins against paper\n"
           + "3. Paper wins against rock\n\n\n")
 
+    # Taking input from user...
     player_choice = int(
         input("What do you choose ? Type 1 for Rock, 2 for Paper or 3 for Scissors : "))
 
@@ -72,6 +80,8 @@ while not end_of_game:
     elif (Computer_choice > player_choice):
         print("You lose!")
 
+    # Checking if player want to play again or not...
+
     should_continue = input(
         "\nType 'yes' to play again or 'no' to stop : ").lower()
     if should_continue == 'no' or should_continue == 'n':
@@ -82,3 +92,5 @@ while not end_of_game:
     else:
         print("Invalid input!")
         end_of_game = True
+print("\n\n")
+
